@@ -6,7 +6,7 @@
   
   body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: #f0f8ff;
+    background: #d7e6f4;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,7 +15,7 @@
   
   .container {
     text-align: center;
-    background: white;
+    background: rgb(186, 166, 166);
     padding: 30px 20px;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
