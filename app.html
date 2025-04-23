@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(120deg, #a1c4fd, #c2e9fb);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .weather-container {
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      width: 350px;
+      text-align: center;
+    }
+
+    .input-group {
+      margin-bottom: 20px;
+    }
+
+    .input-group input {
+      padding: 10px;
+      width: 70%;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      margin-right: 5px;
+    }
+
+    .input-group button {
+      padding: 10px 15px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .input-group button:hover {
+      background-color: #0056b3;
+    }
+
+    .weather-info img {
+      width: 64px;
+      height: 64px;
+    }
+
+    .weather-info h2.city {
+      margin: 10px 0;
+      font-size: 24px;
+    }
+
+    .weather-info .country,
+    .weather-info .date,
+    .weather-info .tempC,
+    .weather-info .condition,
+    .weather-info .humidity {
+      font-size: 16px;
+      margin: 5px 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="weather-container">
+    <form class="input-group">
+      <input type="text" id="city-input" placeholder="Enter city name..." />
+      <button type="submit">Search</button>
+    </form>
+
+    <div class="weather-info">
+      <img class="icon" src="" alt="Weather Icon" />
+      <h2 class="city">City Name</h2>
+      <p class="country">Country</p>
+      <p class="date">Date</p>
+      <p class="tempC">Temperature: --°C</p>
+      <p class="condition">Condition: --</p>
+      <p class="humidity">Humidity: --%</p>
+    </div>
+  </div>
+</body>
+</html>
