@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Country Info App</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #ff7e5f, #feb47b);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .container {
+      background-color: #ffffff;
+      border-radius: 20px;
+      padding: 30px;
+      width: 400px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .input-group {
+      margin-bottom: 20px;
+    }
+
+    .input-group input {
+      padding: 10px;
+      width: 70%;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      margin-right: 5px;
+    }
+
+    .input-group button {
+      padding: 10px 15px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .input-group button:hover {
+      background-color: #0056b3;
+    }
+
+    .flag {
+      width: 100px;
+      height: auto;
+      margin: 15px 0;
+    }
+
+    .country-info h2 {
+      font-size: 24px;
+      margin: 10px 0;
+    }
+
+    .country-info p {
+      font-size: 16px;
+      margin: 8px 0;
+    }
+
+    .country-info .detail {
+      font-weight: bold;
+    }
+
+    .error-message {
+      color: red;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="input-group">
+      <input type="text" id="country-input" placeholder="Enter country name..." />
+      <button type="submit" id="search-btn">Search</button>
+    </div>
+
+    <p class="error-message"></p>
+
+    <div class="country-info">
+      <img class="flag" src="" alt="Flag" />
+      <h2 class="country-name">Country Name</h2>
+      <p><span class="detail">Capital:</span> <span class="capital">--</span></p>
+      <p><span class="detail">Region:</span> <span class="region">--</span></p>
+      <p><span class="detail">Subregion:</span> <span class="subregion">--</span></p>
+      <p><span class="detail">Population:</span> <span class="population">--</span></p>
+      <p><span class="detail">Currency:</span> <span class="currency">--</span></p>
+      <p><span class="detail">Languages:</span> <span class="languages">--</span></p>
+    </div>
+  </div>
+  <script src="country.js"></script>
+</body>
+</html>
